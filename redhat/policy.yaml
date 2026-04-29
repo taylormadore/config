@@ -29,10 +29,10 @@ description: >-
 sources:
   - name: Default
     policy:
-      - github.com/conforma/policy//policy/lib
-      - github.com/conforma/policy//policy/release
+      - github.com/a-ovchinnikov/policy//policy/lib?ref=nexus_gomod_local_packages_rules
+      - github.com/a-ovchinnikov/policy//policy/release?ref=nexus_gomod_local_packages_rules
     data:
-      - github.com/release-engineering/rhtap-ec-policy//data
+      - github.com/taylormadore/rhtap-ec-policy//data?ref=add-proxy-rule-data
       - oci::quay.io/konflux-ci/tekton-catalog/data-acceptable-bundles:latest
       - oci::quay.io/konflux-ci/konflux-vanguard/data-acceptable-bundles:latest
       - oci::quay.io/konflux-ci/integration-service-catalog/data-acceptable-bundles:latest
